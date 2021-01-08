@@ -1,0 +1,21 @@
+{
+  "name": "lyrid-node-express-template",
+  "version": "1.0.0",
+  "description": "Simple Web Express Node.js Lyrid Serverless Project",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "etag": "^1.8.1",
+    "express": "^4.17.1",
+    "express-sharp": "^4.2.19",
+    "express-validator": "^4.2.1",
+    "got": "^11.8.1",
+    "morgan": "^1.10.0",
+    "sharp": "^0.26.3"
+  }
+}

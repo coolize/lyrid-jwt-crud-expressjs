@@ -1,0 +1,12 @@
+name: node
+description: App Description
+ignoreFiles: .git node_modules
+modules:
+- name: express
+  language: nodejs12.x
+  web: express
+  description: Module description
+  functions:
+  - name: entry
+    entry: entry.js
+    description: the entry point for the function
