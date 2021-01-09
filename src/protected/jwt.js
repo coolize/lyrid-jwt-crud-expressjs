@@ -5,7 +5,8 @@ const { pathToRegexp } = require('path-to-regexp');
 const unprotected = [
     pathToRegexp('/echo/:path'),
     pathToRegexp('/sharp/:path'),
-    pathToRegexp('/authenticate')
+    pathToRegexp('/login'),
+    pathToRegexp('/')
 ];
 
 function jwt() {

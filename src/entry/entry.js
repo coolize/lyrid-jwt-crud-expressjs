@@ -21,6 +21,17 @@ var morgan = require('morgan')
 app.use(morgan('combined'))
 
 // Routes
+app.all('/', (req, res) => {
+  res.json(
+      { apis: [
+              {'[GET] /echo/*':'return url back as response'},
+              {'[GET] /sharp':'sharp image processing endpoint'},
+              {'[POST] /login':'endpoint to login. send request: [POST] username,password to get bearer token'},
+              {'[GET/POST] /quotes':'(token required) CRUD endpoint'},
+        ] });
+});
+
+
 app.all('/echo/*', (req, res) => {
   res.send(`Request received: ${req.method} - ${req.path}`);
 });

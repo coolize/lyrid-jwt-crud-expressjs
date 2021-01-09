@@ -6,7 +6,7 @@ const router = express.Router();
 const users = require('./list');
 
 // routes
-router.post('/authenticate', authenticate);
+router.post('/login', authenticate);
 
 function authenticate(req, res) {
     const user = users.find(u => u.username === req.body.username && u.password === req.body.password);
